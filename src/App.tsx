@@ -5,6 +5,7 @@ import "./App.css";
 import { API_URL } from "./constant/api";
 import { Chars } from "./constant/types/chars";
 import CharDetailModal from "./components/modal/charDetailModal";
+import logo from "./assets/apex.png";
 
 function App() {
     const [chars, setChars] = useState<Chars[]>([]);
@@ -147,8 +148,10 @@ function App() {
 
     return (
         <div className="container">
-          
-            <h1 className="custom-title">Meet the legends</h1>
+            <center>
+                <img src={logo} width={"20%"} />
+            </center>
+            <h1 className="custom-title">MEET THE LEGENDS</h1>
             <div
                 className="custom-role-list"
                 onClick={() => onSelectRole("All")}
@@ -172,6 +175,7 @@ function App() {
                             onBtnSearchClicked();
                         }
                     }}
+                    className="custom-input"
                 />
                 <div className="mx-1">
                     <FaSearch

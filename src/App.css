@@ -21,15 +21,14 @@
     flex: 1;
     display: flex;
     justify-content: center;
-    background: linear-gradient(
-        0deg,
-        rgba(196, 12, 12, 1) -20%,
-        rgba(255, 138, 8, 1) 15%
-    );
-    color: #ffffff;
     padding: 10px;
 }
 
 .custom-clear-btn {
     cursor: pointer;
+}
+
+.custom-input {
+    padding: 6px;
+    border-radius: 8px;
 }
